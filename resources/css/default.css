@@ -45,9 +45,13 @@
     .hero-card {
       background: linear-gradient(135deg, #1e2a6a 0%, #0f1a48 60%, #081a20 100%);
       border-radius: 20px;
-      box-shadow: 0 30px 80px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.07);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.07), 
+                  inset 0 1px 20px rgba(34,211,200,0.3), 
+                  inset 0 -1px 20px rgba(108,99,255,0.2);
       transform: perspective(900px) rotateY(-12deg) rotateX(4deg);
       transition: transform 0.4s ease;
+      display: flex;
+      flex-direction: column;
     }
     .hero-card:hover {
       transform: perspective(900px) rotateY(-4deg) rotateX(2deg) translateY(-6px);
